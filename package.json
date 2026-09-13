@@ -1,0 +1,10 @@
+{
+  "name": "nz-2026-itinerary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static travel itinerary website generated from itinerary.md, deployable to GitHub Pages. Zero runtime dependencies.",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "node build.js && node serve.js"
+  }
+}

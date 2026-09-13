@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 3 · Ski Day — The Remarkables — NZ 2026</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232b7fc4'/><path d='M4 46 L60 30' stroke='%23ffffff' stroke-width='4' stroke-linecap='round' opacity='0.9'/><circle cx='40' cy='15' r='5' fill='%23e0ff98'/><path d='M38 21 L33 33 L41 40' stroke='%23e0ff98' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M33 33 L45 30' stroke='%23e0ff98' stroke-width='4' stroke-linecap='round'/><path d='M20 44 L52 34' stroke='%23e04a5f' stroke-width='3.5' stroke-linecap='round'/></svg>" />
+  <meta name="description" content="Day 3 · Thu, 24 Sept — Queenstown (Frankton). First relaxed ski day at The Remarkables. Lift tickets valid 9am–4pm, but no need to catch the first or last lift. Pick up rental gear" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Day 3 · Ski Day — The Remarkables — NZ 2026" />
+  <meta property="og:description" content="Day 3 · Thu, 24 Sept — Queenstown (Frankton). First relaxed ski day at The Remarkables. Lift tickets valid 9am–4pm, but no need to catch the first or last lift. Pick up rental gear" />
+  <meta property="og:url" content="https://semaj-jing.github.io/2026-jz-trip-nz/day-3.html" />
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/The Remarkables from Queenstown, New Zealand 02.jpg?width=1600" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Day 3 · Ski Day — The Remarkables — NZ 2026" />
+  <meta name="twitter:description" content="Day 3 · Thu, 24 Sept — Queenstown (Frankton). First relaxed ski day at The Remarkables. Lift tickets valid 9am–4pm, but no need to catch the first or last lift. Pick up rental gear" />
+  <meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/The Remarkables from Queenstown, New Zealand 02.jpg?width=1600" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  
+  <a class="home-btn home-btn--day" href="index.html" aria-label="Home" title="Home">
+    <svg class="home-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 10.5 12 3l9 7.5" />
+      <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
+    </svg>
+  </a>
+
+  <section class="day-hero day-hero--has-bg">
+    <div class="day-hero__bg"><div class="carousel carousel--hero" data-carousel data-autoplay="6000">
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 4">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/The Remarkables from Queenstown, New Zealand 02.jpg?width=1600" alt="The Remarkables range rising above Lake Wakatipu." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Remarkables range rising above Lake Wakatipu.</span>
+                <span class="carousel__credit">Σ64, CC BY 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="Image 2 of 4">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/The Remarkables from Queenstown, New Zealand 08.jpg?width=1600" alt="Snow on The Remarkables above the Wakatipu Basin." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Snow on The Remarkables above the Wakatipu Basin.</span>
+                <span class="carousel__credit">Σ64, CC BY 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="2" role="group" aria-roledescription="slide" aria-label="Image 3 of 4">
+              <img class="carousel__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-OgVOQqoqIO8GFs3Uw1OI4eNufbZFXjOBRyFvl9VZQ&amp;s=10" alt="Private cedar hot tubs at Onsen Hot Pools overlooking Shotover Canyon." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Private cedar hot tubs at Onsen Hot Pools overlooking Shotover Canyon.</span>
+                
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="3" role="group" aria-roledescription="slide" aria-label="Image 4 of 4">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shotover River at Shotover Canyon at Arthur&#39;s Point.jpg?width=1600" alt="The Shotover River canyon near Arthur&#39;s Point — the view the cedar tubs look out over." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Shotover River canyon near Arthur&#39;s Point — the view the cedar tubs look out over.</span>
+                <span class="carousel__credit">Pseudopanax, Public domain, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          <button class="carousel__btn carousel__btn--prev" type="button" data-dir="-1" aria-label="Previous image">‹</button>
+          <button class="carousel__btn carousel__btn--next" type="button" data-dir="1" aria-label="Next image">›</button>
+          <div class="carousel__dots" role="tablist"><button class="carousel__dot is-active" type="button" data-goto="0" aria-label="Go to image 1"></button><button class="carousel__dot" type="button" data-goto="1" aria-label="Go to image 2"></button><button class="carousel__dot" type="button" data-goto="2" aria-label="Go to image 3"></button><button class="carousel__dot" type="button" data-goto="3" aria-label="Go to image 4"></button></div>
+          <div class="carousel__counter"><span data-carousel-index>1</span> / 4</div>
+          </div></div>
+    <div class="day-hero__inner">
+      <nav class="daynav-top" aria-label="Day navigation">
+        <a class="daynav-top__link" href="day-2.html" title="Day 2: Scenic Drive to Queenstown"><span class="daynav-top__arrow">←</span><span class="daynav-top__text">Day 2</span></a>
+        <span class="daynav-top__center">
+          <span class="daynav-top__count">Day 3 of 6</span>
+          <a class="daynav-top__home" href="index.html" aria-label="Home" title="Home">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 10.5 12 3l9 7.5" />
+              <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
+            </svg>
+          </a>
+        </span>
+        <a class="daynav-top__link daynav-top__link--next" href="day-4.html" title="Day 4: Ski Day — Coronet Peak"><span class="daynav-top__text">Day 4</span><span class="daynav-top__arrow">→</span></a>
+      </nav>
+      <div class="day-hero__head">
+        <div class="cal-tile" aria-label="Thursday 24 September 2026">
+          <span class="cal-tile__weekday">Thu</span>
+          <span class="cal-tile__day">24</span>
+          <span class="cal-tile__month">Sept 2026</span>
+        </div>
+        <div class="day-hero__headings">
+          <h1 class="day-hero__title">Ski Day — The Remarkables</h1>
+          <p class="day-hero__loc">📍 Queenstown (Frankton), New Zealand</p>
+        </div>
+      </div>
+      <p class="day-hero__summary">First relaxed ski day at The Remarkables. Lift tickets valid 9am–4pm, but no need to catch the first or last lift. Pick up rental gear first.</p>
+      
+    </div>
+  </section>
+
+  <main class="container container--day">
+    <div class="day-layout">
+      <div class="day-main">
+        
+        <section class="panel">
+          <h2 class="section-title">Schedule</h2>
+          <ol class="timeline">
+        <li class="timeline__item timeline__item--clickable" data-stop="1" data-lat="-45.0333" data-lon="168.7333" role="button" tabindex="0" aria-label="Show Relaxed morning at accommodation on the map">
+          <span class="timeline__time">09:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 1 on the map">1</span>
+            <span class="timeline__activity">Relaxed morning at accommodation</span>
+            <span class="timeline__desc">No rush — lift tickets valid 9am–4pm but no need to catch the first lift.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="2" data-lat="-45.0534" data-lon="168.8139" role="button" tabindex="0" aria-label="Show Drive to The Remarkables on the map">
+          <span class="timeline__time">11:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 2 on the map">2</span>
+            <span class="timeline__activity">Drive to The Remarkables</span>
+            <span class="timeline__desc">Head to The Remarkables ski field, ~45 min from Frankton via the access road (last section is unsealed).</span>
+            <span class="timeline__notes">Pick up our rental gear first — hire skis/board/boots (Snow Centre in Queenstown or at the base building). The Remarkables: nzski.com/the-remarkables</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="3" data-lat="-45.0534" data-lon="168.8139" role="button" tabindex="0" aria-label="Show Ski/snowboard — The Remarkables on the map">
+          <span class="timeline__time">12:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 3 on the map">3</span>
+            <span class="timeline__activity">Ski/snowboard — The Remarkables</span>
+            <span class="timeline__desc">Lift tickets 9am–4pm — join partway through, no need to ski the full window or catch the last lift.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel data-autoplay="6000">
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 2">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/The Remarkables from Queenstown, New Zealand 02.jpg?width=1600" alt="The Remarkables range rising above Lake Wakatipu." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Remarkables range rising above Lake Wakatipu.</span>
+                <span class="carousel__credit">Σ64, CC BY 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="Image 2 of 2">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/The Remarkables from Queenstown, New Zealand 08.jpg?width=1600" alt="Snow on The Remarkables above the Wakatipu Basin." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Snow on The Remarkables above the Wakatipu Basin.</span>
+                <span class="carousel__credit">Σ64, CC BY 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          <button class="carousel__btn carousel__btn--prev" type="button" data-dir="-1" aria-label="Previous image">‹</button>
+          <button class="carousel__btn carousel__btn--next" type="button" data-dir="1" aria-label="Next image">›</button>
+          <div class="carousel__dots" role="tablist"><button class="carousel__dot is-active" type="button" data-goto="0" aria-label="Go to image 1"></button><button class="carousel__dot" type="button" data-goto="1" aria-label="Go to image 2"></button></div>
+          <div class="carousel__counter"><span data-carousel-index>1</span> / 2</div>
+          </div></div>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="4" data-lat="-45.0333" data-lon="168.7333" role="button" tabindex="0" aria-label="Show Drive back to accommodation on the map">
+          <span class="timeline__time">16:30</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 4 on the map">4</span>
+            <span class="timeline__activity">Drive back to accommodation</span>
+            <span class="timeline__desc">Head back once you&#39;ve had enough on the slopes.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="5" data-lat="-45.0341" data-lon="168.6588" role="button" tabindex="0" aria-label="Show Dinner: Flame Bar &amp; Grill on the map">
+          <span class="timeline__time">19:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 5 on the map">5</span>
+            <span class="timeline__activity">Dinner: Flame Bar &amp; Grill</span>
+            <span class="timeline__desc">South African-style steakhouse on Steamer Wharf, known for ribs and steaks, lake and Remarkables views. Confirmed.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="6" data-lat="-44.9987" data-lon="168.6928" role="button" tabindex="0" aria-label="Show Onsen Hot Pools on the map">
+          <span class="timeline__time">21:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 6 on the map">6</span>
+            <span class="timeline__activity">Onsen Hot Pools</span>
+            <span class="timeline__desc">Wind down after a day on the slopes in private cedar hot tubs overlooking Shotover Canyon, open till 11pm, complimentary shuttle available.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel data-autoplay="6000">
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 2">
+              <img class="carousel__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-OgVOQqoqIO8GFs3Uw1OI4eNufbZFXjOBRyFvl9VZQ&amp;s=10" alt="Private cedar hot tubs at Onsen Hot Pools overlooking Shotover Canyon." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Private cedar hot tubs at Onsen Hot Pools overlooking Shotover Canyon.</span>
+                
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="Image 2 of 2">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shotover River at Shotover Canyon at Arthur&#39;s Point.jpg?width=1600" alt="The Shotover River canyon near Arthur&#39;s Point — the view the cedar tubs look out over." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Shotover River canyon near Arthur&#39;s Point — the view the cedar tubs look out over.</span>
+                <span class="carousel__credit">Pseudopanax, Public domain, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          <button class="carousel__btn carousel__btn--prev" type="button" data-dir="-1" aria-label="Previous image">‹</button>
+          <button class="carousel__btn carousel__btn--next" type="button" data-dir="1" aria-label="Next image">›</button>
+          <div class="carousel__dots" role="tablist"><button class="carousel__dot is-active" type="button" data-goto="0" aria-label="Go to image 1"></button><button class="carousel__dot" type="button" data-goto="1" aria-label="Go to image 2"></button></div>
+          <div class="carousel__counter"><span data-carousel-index>1</span> / 2</div>
+          </div></div>
+          </div>
+        </li></ol>
+        </section>
+        
+        <section class="panel">
+          <details class="alts" open>
+            <summary class="alts__summary">
+              <span class="alts__summary-text">
+                <span class="alts__icon" aria-hidden="true">✨</span>
+                Other Activities
+                <span class="alts__count">4</span>
+              </span>
+              <span class="alts__chevron" aria-hidden="true">▾</span>
+            </summary>
+            <p class="alts__lead">Optional extras around Queenstown (Frankton) if you have time or want to swap something out.</p>
+            <ul class="alts__list">
+          <li class="alt">
+            <h3 class="alt__title">Skyline Gondola</h3>
+            <div class="alt__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Skyline Gondola Queenstown.jpg?width=1600" alt="The Skyline Gondola climbing Bob&#39;s Peak above Queenstown." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Skyline Gondola climbing Bob&#39;s Peak above Queenstown.</span>
+                <span class="carousel__credit">Vincent60030, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+            <p class="alt__desc">Ride the steep gondola up Bob&#39;s Peak for sunset views over Queenstown, plus the luge and the evening Kiwi Haka cultural show.</p>
+            <p class="alt__impact"><span class="alt__impact-label">Good to know</span>Great low-effort post-ski evening — a short drive or walk from the waterfront. Book the Kiwi Haka show ahead in peak season.</p>
+          </li>
+          <li class="alt">
+            <h3 class="alt__title">Queenstown Hill Time Walk</h3>
+            <div class="alt__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Queenstown, New Zealand - panoramio (23).jpg?width=1600" alt="Panorama over Queenstown and Lake Wakatipu from the hills above town." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Panorama over Queenstown and Lake Wakatipu from the hills above town.</span>
+                <span class="carousel__credit">Michelle Maria, CC BY 3.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+            <p class="alt__desc">A ~4.2km loop (2–3hrs return) climbing through pine forest to panoramic views over Lake Wakatipu and The Remarkables.</p>
+            <p class="alt__impact"><span class="alt__impact-label">Good to know</span>Moderate effort — a good leg-stretch if you want more than skiing, with the best light late afternoon.</p>
+          </li>
+          <li class="alt">
+            <h3 class="alt__title">TSS Earnslaw evening cruise</h3>
+            <div class="alt__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/TSS Earnslaw Vintage Steamship.jpg?width=1600" alt="The historic TSS Earnslaw steaming across Lake Wakatipu." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The historic TSS Earnslaw steaming across Lake Wakatipu.</span>
+                <span class="carousel__credit">Jocelyn Kinghorn, CC BY-SA 2.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+            <p class="alt__desc">A vintage 1912 coal-fired steamship cruise on Lake Wakatipu, with an optional Walter Peak farm BBQ dinner.</p>
+            <p class="alt__impact"><span class="alt__impact-label">Good to know</span>Relaxed alternative to a restaurant dinner; sailings are timed, so check the schedule and book ahead.</p>
+          </li>
+          <li class="alt">
+            <h3 class="alt__title">Frankton Arm Walkway</h3>
+            <div class="alt__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/The Frankton Arm. Lake Wakatipu. NZ (27027500700).jpg?width=1600" alt="The Frankton Arm of Lake Wakatipu, followed by the walkway." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Frankton Arm of Lake Wakatipu, followed by the walkway.</span>
+                <span class="carousel__credit">Bernard Spragg. NZ, CC0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+            <p class="alt__desc">Flat, easy lakeside path right from the Frankton accommodation, following the Frankton Arm with Remarkables views.</p>
+            <p class="alt__impact"><span class="alt__impact-label">Good to know</span>Very low effort and no booking — an easy stroll before or after dinner near the accommodation.</p>
+          </li></ul>
+          </details>
+        </section>
+      </div>
+
+      <aside class="day-side">
+        <section class="panel panel--weather" data-weather-panel data-lat="-45.0333" data-lon="168.7333" data-date="2026-09-24" data-place="Queenstown (Frankton)">
+          <h2 class="section-title">Weather</h2>
+          <div class="weather" data-weather-target>
+            <p class="weather__loading">Fetching forecast…</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2 class="section-title">Where We Stay</h2>
+          <p class="stay__name">🏨 9 Juniper Place, Frankton, Queenstown 9300</p>
+          <p class="stay__area">Frankton</p>
+        </section>
+
+        <section class="panel">
+          <h2 class="section-title">Today's Route</h2>
+          <p class="day-map__route-label">6 stops — numbered in schedule order.</p>
+          <div id="day-map" class="day-map"></div>
+        </section>
+      </aside>
+    </div>
+
+    
+    <section class="panel comments" id="comments">
+      <h2 class="section-title">Comments</h2>
+      <p class="section-lead">Leave a note for this day — sign in with GitHub to comment.</p>
+      <div class="giscus"></div>
+      <script src="https://giscus.app/client.js"
+        data-repo="semaj-jing/2026-jz-trip-nz"
+        data-repo-id="R_kgDOUP-bIQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOUP-bIc4DE_cG"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+
+    <nav class="daynav">
+      <a class="daynav__link" href="day-2.html">← Day 2: Scenic Drive to Queenstown</a>
+      <a class="daynav__link daynav__link--next" href="day-4.html">Day 4: Ski Day — Coronet Peak →</a>
+    </nav>
+  </main>
+
+  
+  <footer class="footer">
+    <a class="footer__gh" href="https://github.com/semaj-jing/2026-jz-trip-nz" target="_blank" rel="noopener" aria-label="View this project on GitHub">
+      <svg class="footer__gh-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.575.106.785-.25.785-.556 0-.274-.01-1-.015-1.965-3.196.695-3.87-1.54-3.87-1.54-.523-1.33-1.277-1.685-1.277-1.685-1.044-.714.08-.699.08-.699 1.154.081 1.762 1.185 1.762 1.185 1.026 1.758 2.692 1.25 3.348.956.104-.743.401-1.25.73-1.538-2.552-.29-5.235-1.276-5.235-5.68 0-1.255.448-2.28 1.184-3.084-.119-.29-.513-1.46.112-3.043 0 0 .966-.31 3.166 1.178a10.98 10.98 0 0 1 2.882-.388c.978.004 1.963.132 2.882.388 2.199-1.488 3.163-1.178 3.163-1.178.627 1.583.233 2.753.114 3.043.738.804 1.183 1.829 1.183 3.084 0 4.415-2.687 5.386-5.247 5.67.412.355.78 1.056.78 2.13 0 1.538-.014 2.777-.014 3.155 0 .309.207.667.79.554A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/>
+      </svg>
+    </a>
+    <p>NZ 2026 · Tue, 22 Sept–Sun, 27 Sept</p>
+    <p class="footer__muted">Weather via <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · Map tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
+  </footer>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/app.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () { window.TripSite && TripSite.init({"type":"day","coords":[-45.0333,168.7333],"place":"Queenstown (Frankton)","date":"2026-09-24","route":null,"stops":[{"n":1,"coords":[-45.0333,168.7333],"time":"09:00","activity":"Relaxed morning at accommodation","tbc":false},{"n":2,"coords":[-45.0534,168.8139],"time":"11:00","activity":"Drive to The Remarkables","tbc":false},{"n":3,"coords":[-45.0534,168.8139],"time":"12:00","activity":"Ski/snowboard — The Remarkables","tbc":false},{"n":4,"coords":[-45.0333,168.7333],"time":"16:30","activity":"Drive back to accommodation","tbc":false},{"n":5,"coords":[-45.0341,168.6588],"time":"19:00","activity":"Dinner: Flame Bar & Grill","tbc":false},{"n":6,"coords":[-44.9987,168.6928],"time":"21:00","activity":"Onsen Hot Pools","tbc":false}]}); });</script>
+  </body>
+</html>

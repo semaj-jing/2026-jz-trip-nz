@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 1 · Arrival &amp; Drive to Lake Tekapo — NZ 2026</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232b7fc4'/><path d='M4 46 L60 30' stroke='%23ffffff' stroke-width='4' stroke-linecap='round' opacity='0.9'/><circle cx='40' cy='15' r='5' fill='%23e0ff98'/><path d='M38 21 L33 33 L41 40' stroke='%23e0ff98' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M33 33 L45 30' stroke='%23e0ff98' stroke-width='4' stroke-linecap='round'/><path d='M20 44 L52 34' stroke='%23e04a5f' stroke-width='3.5' stroke-linecap='round'/></svg>" />
+  <meta name="description" content="Day 1 · Tue, 22 Sept — Lake Tekapo. Land in Queenstown, pick up the rental car, and drive north through Central Otago and the Mackenzie Basin to Lake Tekapo, with snack and dinner " />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Day 1 · Arrival &amp; Drive to Lake Tekapo — NZ 2026" />
+  <meta property="og:description" content="Day 1 · Tue, 22 Sept — Lake Tekapo. Land in Queenstown, pick up the rental car, and drive north through Central Otago and the Mackenzie Basin to Lake Tekapo, with snack and dinner " />
+  <meta property="og:url" content="https://semaj-jing.github.io/2026-jz-trip-nz/day-1.html" />
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Hills in Lindis Pass, New Zealand.jpg?width=1600" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Day 1 · Arrival &amp; Drive to Lake Tekapo — NZ 2026" />
+  <meta name="twitter:description" content="Day 1 · Tue, 22 Sept — Lake Tekapo. Land in Queenstown, pick up the rental car, and drive north through Central Otago and the Mackenzie Basin to Lake Tekapo, with snack and dinner " />
+  <meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Hills in Lindis Pass, New Zealand.jpg?width=1600" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  
+  <a class="home-btn home-btn--day" href="index.html" aria-label="Home" title="Home">
+    <svg class="home-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 10.5 12 3l9 7.5" />
+      <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
+    </svg>
+  </a>
+
+  <section class="day-hero day-hero--has-bg">
+    <div class="day-hero__bg"><div class="carousel carousel--hero" data-carousel data-autoplay="6000">
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hills in Lindis Pass, New Zealand.jpg?width=1600" alt="Tussock-covered hills at Lindis Pass, the highest point on the South Island&#39;s state highway network — one of today&#39;s photo stops." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Tussock-covered hills at Lindis Pass, the highest point on the South Island&#39;s state highway network — one of today&#39;s photo stops.</span>
+                <span class="carousel__credit">Michal Klajban, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="Image 2 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Historic Cromwell.jpg?width=1600" alt="Old Cromwell Town&#39;s restored historic precinct by Lake Dunstan." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Old Cromwell Town&#39;s restored historic precinct by Lake Dunstan.</span>
+                <span class="carousel__credit">CHCBOY, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="2" role="group" aria-roledescription="slide" aria-label="Image 3 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lindis Pass, Otago, New Zealand.jpg?width=1600" alt="Golden tussock hills rolling over the Lindis Pass summit." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Golden tussock hills rolling over the Lindis Pass summit.</span>
+                <span class="carousel__credit">Charlie Mitchell, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="3" role="group" aria-roledescription="slide" aria-label="Image 4 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Twizel War Memorial, Twizel, New Zealand 04.jpg?width=1600" alt="Twizel, the small service town gateway to the Mackenzie lakes." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Twizel, the small service town gateway to the Mackenzie lakes.</span>
+                <span class="carousel__credit">Michal Klajban, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="4" role="group" aria-roledescription="slide" aria-label="Image 5 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake Pukaki &amp; Aoraki Mount Cook 01.jpg?width=1600" alt="Turquoise Lake Pukaki with Aoraki/Mt Cook on the horizon." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Turquoise Lake Pukaki with Aoraki/Mt Cook on the horizon.</span>
+                <span class="carousel__credit">Krzysztof Golik, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="5" role="group" aria-roledescription="slide" aria-label="Image 6 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake Pukaki 21.jpg?width=1600" alt="The glacier-fed blue of Lake Pukaki." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The glacier-fed blue of Lake Pukaki.</span>
+                <span class="carousel__credit">Krzysztof Golik, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="6" role="group" aria-roledescription="slide" aria-label="Image 7 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake Tekapo 01.jpg?width=1600" alt="Lake Tekapo&#39;s milky-turquoise water backed by the Southern Alps." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Lake Tekapo&#39;s milky-turquoise water backed by the Southern Alps.</span>
+                <span class="carousel__credit">Krzysztof Golik, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="7" role="group" aria-roledescription="slide" aria-label="Image 8 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Milky way galaxy, lake Tekapo, stargazing view 3.jpg?width=1600" alt="The Milky Way over Lake Tekapo — part of an International Dark Sky Reserve." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Milky Way over Lake Tekapo — part of an International Dark Sky Reserve.</span>
+                <span class="carousel__credit">Sky_xe, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="8" role="group" aria-roledescription="slide" aria-label="Image 9 of 9">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Church of the Good Shepherd, Lake Tekapo, New Zealand 03.jpg?width=1600" alt="The tiny Church of the Good Shepherd on the Tekapo lakeshore." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The tiny Church of the Good Shepherd on the Tekapo lakeshore.</span>
+                <span class="carousel__credit">Michal Klajban, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          <button class="carousel__btn carousel__btn--prev" type="button" data-dir="-1" aria-label="Previous image">‹</button>
+          <button class="carousel__btn carousel__btn--next" type="button" data-dir="1" aria-label="Next image">›</button>
+          <div class="carousel__dots" role="tablist"><button class="carousel__dot is-active" type="button" data-goto="0" aria-label="Go to image 1"></button><button class="carousel__dot" type="button" data-goto="1" aria-label="Go to image 2"></button><button class="carousel__dot" type="button" data-goto="2" aria-label="Go to image 3"></button><button class="carousel__dot" type="button" data-goto="3" aria-label="Go to image 4"></button><button class="carousel__dot" type="button" data-goto="4" aria-label="Go to image 5"></button><button class="carousel__dot" type="button" data-goto="5" aria-label="Go to image 6"></button><button class="carousel__dot" type="button" data-goto="6" aria-label="Go to image 7"></button><button class="carousel__dot" type="button" data-goto="7" aria-label="Go to image 8"></button><button class="carousel__dot" type="button" data-goto="8" aria-label="Go to image 9"></button></div>
+          <div class="carousel__counter"><span data-carousel-index>1</span> / 9</div>
+          </div></div>
+    <div class="day-hero__inner">
+      <nav class="daynav-top" aria-label="Day navigation">
+        <a class="daynav-top__link" href="index.html" title="Overview"><span class="daynav-top__arrow">←</span><span class="daynav-top__text">Overview</span></a>
+        <span class="daynav-top__center">
+          <span class="daynav-top__count">Day 1 of 6</span>
+          <a class="daynav-top__home" href="index.html" aria-label="Home" title="Home">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 10.5 12 3l9 7.5" />
+              <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
+            </svg>
+          </a>
+        </span>
+        <a class="daynav-top__link daynav-top__link--next" href="day-2.html" title="Day 2: Scenic Drive to Queenstown"><span class="daynav-top__text">Day 2</span><span class="daynav-top__arrow">→</span></a>
+      </nav>
+      <div class="day-hero__head">
+        <div class="cal-tile" aria-label="Tuesday 22 September 2026">
+          <span class="cal-tile__weekday">Tue</span>
+          <span class="cal-tile__day">22</span>
+          <span class="cal-tile__month">Sept 2026</span>
+        </div>
+        <div class="day-hero__headings">
+          <h1 class="day-hero__title">Arrival &amp; Drive to Lake Tekapo</h1>
+          <p class="day-hero__loc">📍 Lake Tekapo, New Zealand</p>
+        </div>
+      </div>
+      <p class="day-hero__summary">Land in Queenstown, pick up the rental car, and drive north through Central Otago and the Mackenzie Basin to Lake Tekapo, with snack and dinner stops along the way. Arrive around sunset in time for stargazing under some of the darkest skies on Earth.</p>
+      <p class="day-hero__tbc-note">⚠️ 4 items on this day are still to be confirmed — see the highlighted rows below.</p>
+    </div>
+  </section>
+
+  <main class="container container--day">
+    <div class="day-layout">
+      <div class="day-main">
+        
+        <section class="panel">
+          <h2 class="section-title">Schedule</h2>
+          <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__time">08:30</span>
+          <div class="timeline__body">
+            
+            <span class="timeline__activity">Depart Sydney (SYD)</span>
+            <span class="timeline__desc">Virgin Australia VA0163, Boeing 737-8.</span>
+            <span class="timeline__notes">3hr flight</span>
+            
+            
+            
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="1" data-lat="-45.0211" data-lon="168.7392" role="button" tabindex="0" aria-label="Show Arrive Queenstown (ZQN) on the map">
+          <span class="timeline__time">13:30</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 1 on the map">1</span>
+            <span class="timeline__activity">Arrive Queenstown (ZQN)</span>
+            <span class="timeline__desc">Land at Queenstown Airport, clear the domestic arrivals hall, and collect luggage. Seats 26A/26B/26C.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item is-tbc timeline__item--clickable" data-stop="2" data-lat="-45.0211" data-lon="168.7392" role="button" tabindex="0" aria-label="Show Pick up rental car on the map">
+          <span class="timeline__time">14:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 2 on the map">2</span>
+            <span class="timeline__activity">Pick up rental car <span class="tbc-badge" title="This item is not yet confirmed">TBC</span></span>
+            <span class="timeline__desc">Not yet booked — need a 4WD given winter/snow conditions possible on Lindis Pass and Crown Range in late September.</span>
+            <span class="timeline__notes">TODO: book rental (4WD)</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="3" data-lat="-45.0333" data-lon="169.2" role="button" tabindex="0" aria-label="Show Cromwell (snack stop) on the map">
+          <span class="timeline__time">14:45</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 3 on the map">3</span>
+            <span class="timeline__activity">Cromwell (snack stop)</span>
+            <span class="timeline__desc">Fruit stalls and fresh Central Otago stone fruit — a quick stretch-the-legs stop, ~45 min from the airport.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Historic Cromwell.jpg?width=1600" alt="Old Cromwell Town&#39;s restored historic precinct by Lake Dunstan." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Old Cromwell Town&#39;s restored historic precinct by Lake Dunstan.</span>
+                <span class="carousel__credit">CHCBOY, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="4" data-lat="-44.5878" data-lon="169.6478" role="button" tabindex="0" aria-label="Show Lindis Pass summit lookout on the map">
+          <span class="timeline__time">15:55</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 4 on the map">4</span>
+            <span class="timeline__activity">Lindis Pass summit lookout</span>
+            <span class="timeline__desc">The highest point on the South Island&#39;s state highway network (971m). Sweeping alpine tussock scenery — a great photo stop.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lindis Pass, Otago, New Zealand.jpg?width=1600" alt="Golden tussock hills rolling over the Lindis Pass summit." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Golden tussock hills rolling over the Lindis Pass summit.</span>
+                <span class="carousel__credit">Charlie Mitchell, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+          </div>
+        </li>
+        <li class="timeline__item is-tbc timeline__item--clickable" data-stop="5" data-lat="-44.4842" data-lon="169.9666" role="button" tabindex="0" aria-label="Show Dinner: Omarama on the map">
+          <span class="timeline__time">16:30</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 5 on the map">5</span>
+            <span class="timeline__activity">Dinner: Omarama <span class="tbc-badge" title="This item is not yet confirmed">TBC</span></span>
+            <span class="timeline__desc">Dinner en route rather than in Tekapo. Try The Love Shack Kebabs food van, or the local chicken pie.</span>
+            <span class="timeline__notes">45 min stop</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="6" data-lat="-44.2599" data-lon="170.0989" role="button" tabindex="0" aria-label="Show Twizel (optional stop) on the map">
+          <span class="timeline__time">17:35</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 6 on the map">6</span>
+            <span class="timeline__activity">Twizel (optional stop)</span>
+            <span class="timeline__desc">Small alpine town with cafes — optional coffee/bathroom break if time allows.</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Twizel War Memorial, Twizel, New Zealand 04.jpg?width=1600" alt="Twizel, the small service town gateway to the Mackenzie lakes." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Twizel, the small service town gateway to the Mackenzie lakes.</span>
+                <span class="carousel__credit">Michal Klajban, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="7" data-lat="-44.2231" data-lon="170.1281" role="button" tabindex="0" aria-label="Show Lake Pukaki lookout on the map">
+          <span class="timeline__time">18:10</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 7 on the map">7</span>
+            <span class="timeline__activity">Lake Pukaki lookout</span>
+            <span class="timeline__desc">Turquoise glacial lake with Aoraki/Mt Cook in the background. Sunset views. Mt Cook Alpine Salmon Shop nearby if still open (9am–5pm).</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel data-autoplay="6000">
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 2">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake Pukaki &amp; Aoraki Mount Cook 01.jpg?width=1600" alt="Turquoise Lake Pukaki with Aoraki/Mt Cook on the horizon." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Turquoise Lake Pukaki with Aoraki/Mt Cook on the horizon.</span>
+                <span class="carousel__credit">Krzysztof Golik, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="Image 2 of 2">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake Pukaki 21.jpg?width=1600" alt="The glacier-fed blue of Lake Pukaki." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The glacier-fed blue of Lake Pukaki.</span>
+                <span class="carousel__credit">Krzysztof Golik, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          <button class="carousel__btn carousel__btn--prev" type="button" data-dir="-1" aria-label="Previous image">‹</button>
+          <button class="carousel__btn carousel__btn--next" type="button" data-dir="1" aria-label="Next image">›</button>
+          <div class="carousel__dots" role="tablist"><button class="carousel__dot is-active" type="button" data-goto="0" aria-label="Go to image 1"></button><button class="carousel__dot" type="button" data-goto="1" aria-label="Go to image 2"></button></div>
+          <div class="carousel__counter"><span data-carousel-index>1</span> / 2</div>
+          </div></div>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="8" data-lat="-44.0046" data-lon="170.4779" role="button" tabindex="0" aria-label="Show Arrive Lake Tekapo on the map">
+          <span class="timeline__time">19:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 8 on the map">8</span>
+            <span class="timeline__activity">Arrive Lake Tekapo</span>
+            <span class="timeline__desc">Arriving right around sunset in late September (~7pm).</span>
+            
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel>
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 1">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake Tekapo 01.jpg?width=1600" alt="Lake Tekapo&#39;s milky-turquoise water backed by the Southern Alps." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">Lake Tekapo&#39;s milky-turquoise water backed by the Southern Alps.</span>
+                <span class="carousel__credit">Krzysztof Golik, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          </div></div>
+          </div>
+        </li>
+        <li class="timeline__item is-tbc timeline__item--clickable" data-stop="9" data-lat="-44.0046" data-lon="170.4779" role="button" tabindex="0" aria-label="Show Find accommodation on the map">
+          <span class="timeline__time">19:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 9 on the map">9</span>
+            <span class="timeline__activity">Find accommodation <span class="tbc-badge" title="This item is not yet confirmed">TBC</span></span>
+            <span class="timeline__desc">Not yet booked — 1 night in Lake Tekapo.</span>
+            <span class="timeline__notes">TODO: book accommodation</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            
+          </div>
+        </li>
+        <li class="timeline__item is-tbc timeline__item--clickable" data-stop="10" data-lat="-44.0046" data-lon="170.4713" role="button" tabindex="0" aria-label="Show Stargazing (option TBD) on the map">
+          <span class="timeline__time">20:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 10 on the map">10</span>
+            <span class="timeline__activity">Stargazing (option TBD) <span class="tbc-badge" title="This item is not yet confirmed">TBC</span></span>
+            <span class="timeline__desc">Choose on the night — all close together: Tekapo Stargazing (hot pools + telescopes), Tekapo Chinese Stargazing (Mandarin guiding), Astro Tekapo (lakefront telescopes), or self-guided.</span>
+            <span class="timeline__notes">Tekapo Stargazing: tekapostargazing.co.nz | Astro Tekapo: laketekaponz.co.nz/activities/astro-tekapo | Tekapo Chinese Stargazing: mackenzienz.com</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+            <div class="timeline__gallery"><div class="carousel carousel--compact" data-carousel data-autoplay="6000">
+            <div class="carousel__viewport">
+            <figure class="carousel__slide is-active" data-slide="0" role="group" aria-roledescription="slide" aria-label="Image 1 of 2">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Milky way galaxy, lake Tekapo, stargazing view 3.jpg?width=1600" alt="The Milky Way over Lake Tekapo — part of an International Dark Sky Reserve." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The Milky Way over Lake Tekapo — part of an International Dark Sky Reserve.</span>
+                <span class="carousel__credit">Sky_xe, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure>
+            <figure class="carousel__slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="Image 2 of 2">
+              <img class="carousel__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Church of the Good Shepherd, Lake Tekapo, New Zealand 03.jpg?width=1600" alt="The tiny Church of the Good Shepherd on the Tekapo lakeshore." loading="lazy" />
+              <figcaption class="carousel__caption">
+                <span class="carousel__caption-text">The tiny Church of the Good Shepherd on the Tekapo lakeshore.</span>
+                <span class="carousel__credit">Michal Klajban, CC BY-SA 4.0, via Wikimedia Commons</span>
+              </figcaption>
+            </figure></div>
+            
+          <button class="carousel__btn carousel__btn--prev" type="button" data-dir="-1" aria-label="Previous image">‹</button>
+          <button class="carousel__btn carousel__btn--next" type="button" data-dir="1" aria-label="Next image">›</button>
+          <div class="carousel__dots" role="tablist"><button class="carousel__dot is-active" type="button" data-goto="0" aria-label="Go to image 1"></button><button class="carousel__dot" type="button" data-goto="1" aria-label="Go to image 2"></button></div>
+          <div class="carousel__counter"><span data-carousel-index>1</span> / 2</div>
+          </div></div>
+          </div>
+        </li></ol>
+        </section>
+        
+      </div>
+
+      <aside class="day-side">
+        <section class="panel panel--weather" data-weather-panel data-lat="-44.0046" data-lon="170.4779" data-date="2026-09-22" data-place="Lake Tekapo">
+          <h2 class="section-title">Weather</h2>
+          <div class="weather" data-weather-target>
+            <p class="weather__loading">Fetching forecast…</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2 class="section-title">Where We Stay</h2>
+          <p class="stay__name">🏨 TODO — Lake Tekapo accommodation not yet booked</p>
+          <p class="stay__area">Lake Tekapo</p>
+        </section>
+
+        <section class="panel">
+          <h2 class="section-title">Today's Route</h2>
+          <p class="day-map__route-label">10 stops — numbered in schedule order.</p>
+          <div id="day-map" class="day-map"></div>
+        </section>
+      </aside>
+    </div>
+
+    
+    <section class="panel comments" id="comments">
+      <h2 class="section-title">Comments</h2>
+      <p class="section-lead">Leave a note for this day — sign in with GitHub to comment.</p>
+      <div class="giscus"></div>
+      <script src="https://giscus.app/client.js"
+        data-repo="semaj-jing/2026-jz-trip-nz"
+        data-repo-id="R_kgDOUP-bIQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOUP-bIc4DE_cG"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+
+    <nav class="daynav">
+      <a class="daynav__link" href="index.html">← Overview</a>
+      <a class="daynav__link daynav__link--next" href="day-2.html">Day 2: Scenic Drive to Queenstown →</a>
+    </nav>
+  </main>
+
+  
+  <footer class="footer">
+    <a class="footer__gh" href="https://github.com/semaj-jing/2026-jz-trip-nz" target="_blank" rel="noopener" aria-label="View this project on GitHub">
+      <svg class="footer__gh-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.575.106.785-.25.785-.556 0-.274-.01-1-.015-1.965-3.196.695-3.87-1.54-3.87-1.54-.523-1.33-1.277-1.685-1.277-1.685-1.044-.714.08-.699.08-.699 1.154.081 1.762 1.185 1.762 1.185 1.026 1.758 2.692 1.25 3.348.956.104-.743.401-1.25.73-1.538-2.552-.29-5.235-1.276-5.235-5.68 0-1.255.448-2.28 1.184-3.084-.119-.29-.513-1.46.112-3.043 0 0 .966-.31 3.166 1.178a10.98 10.98 0 0 1 2.882-.388c.978.004 1.963.132 2.882.388 2.199-1.488 3.163-1.178 3.163-1.178.627 1.583.233 2.753.114 3.043.738.804 1.183 1.829 1.183 3.084 0 4.415-2.687 5.386-5.247 5.67.412.355.78 1.056.78 2.13 0 1.538-.014 2.777-.014 3.155 0 .309.207.667.79.554A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/>
+      </svg>
+    </a>
+    <p>NZ 2026 · Tue, 22 Sept–Sun, 27 Sept</p>
+    <p class="footer__muted">Weather via <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · Map tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
+  </footer>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/app.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () { window.TripSite && TripSite.init({"type":"day","coords":[-44.0046,170.4779],"place":"Lake Tekapo","date":"2026-09-22","route":{"start":{"name":"Queenstown Airport (ZQN)","coords":[-45.0211,168.7392]},"end":{"name":"Lake Tekapo","coords":[-44.0046,170.4779]}},"stops":[{"n":1,"coords":[-45.0211,168.7392],"time":"13:30","activity":"Arrive Queenstown (ZQN)","tbc":false},{"n":2,"coords":[-45.0211,168.7392],"time":"14:00","activity":"Pick up rental car","tbc":true},{"n":3,"coords":[-45.0333,169.2],"time":"14:45","activity":"Cromwell (snack stop)","tbc":false},{"n":4,"coords":[-44.5878,169.6478],"time":"15:55","activity":"Lindis Pass summit lookout","tbc":false},{"n":5,"coords":[-44.4842,169.9666],"time":"16:30","activity":"Dinner: Omarama","tbc":true},{"n":6,"coords":[-44.2599,170.0989],"time":"17:35","activity":"Twizel (optional stop)","tbc":false},{"n":7,"coords":[-44.2231,170.1281],"time":"18:10","activity":"Lake Pukaki lookout","tbc":false},{"n":8,"coords":[-44.0046,170.4779],"time":"19:00","activity":"Arrive Lake Tekapo","tbc":false},{"n":9,"coords":[-44.0046,170.4779],"time":"19:00","activity":"Find accommodation","tbc":true},{"n":10,"coords":[-44.0046,170.4713],"time":"20:00","activity":"Stargazing (option TBD)","tbc":true}]}); });</script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 7 · Departure Day — New Zealand Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  
+</head>
+<body>
+  
+  <header class="nav">
+    <a class="nav__brand" href="index.html">
+      <span class="nav__brand-emoji" aria-hidden="true">🌏</span>
+      <span>New Zealand Adventure</span>
+    </a>
+    <nav class="nav__links">
+      <a href="index.html" class="">Overview</a>
+      <a href="index.html#itinerary">Itinerary</a>
+      <a href="index.html#map">Map</a>
+      <a href="index.html#flights">Flights</a>
+    </nav>
+  </header>
+
+  <section class="day-hero">
+    <div class="day-hero__inner">
+      <nav class="daynav-top" aria-label="Day navigation">
+        <a class="daynav-top__link" href="day-6.html" title="Day 6: Queenstown Adventure Day"><span class="daynav-top__arrow">←</span><span class="daynav-top__text">Day 6</span></a>
+        <span class="daynav-top__center">Day 7 of 7</span>
+        <a class="daynav-top__link daynav-top__link--next" href="index.html" title="Overview"><span class="daynav-top__text">Overview</span><span class="daynav-top__arrow">→</span></a>
+      </nav>
+      <div class="day-hero__head">
+        <div class="cal-tile" aria-label="Friday 20 November 2026">
+          <span class="cal-tile__weekday">Fri</span>
+          <span class="cal-tile__day">20</span>
+          <span class="cal-tile__month">Nov 2026</span>
+        </div>
+        <div class="day-hero__headings">
+          <h1 class="day-hero__title">Departure Day</h1>
+          <p class="day-hero__loc">📍 Queenstown, New Zealand</p>
+        </div>
+      </div>
+      <p class="day-hero__summary">One last coffee by the lake before heading to the airport for the journey home. Until next time, Aotearoa!</p>
+      
+    </div>
+  </section>
+
+  <main class="container container--day">
+    <div class="day-layout">
+      <div class="day-main">
+        
+        <section class="panel">
+          <h2 class="section-title">Highlights</h2>
+          <ul class="highlights"><li>Lakeside breakfast</li><li>Last-minute souvenirs</li><li>Airport transfer &amp; departure</li></ul>
+        </section>
+
+        <section class="panel">
+          <h2 class="section-title">Schedule</h2>
+          <ol class="timeline">
+        <li class="timeline__item timeline__item--clickable" data-stop="1" data-lat="-45.0334" data-lon="168.658" role="button" tabindex="0" aria-label="Show Breakfast &amp; pack up on the map">
+          <span class="timeline__time">09:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 1 on the map">1</span>
+            <span class="timeline__activity">Breakfast &amp; pack up</span>
+            <span class="timeline__desc">Relaxed lakeside breakfast and final packing.</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="2" data-lat="-45.033" data-lon="168.6585" role="button" tabindex="0" aria-label="Show Hotel check-out on the map">
+          <span class="timeline__time">11:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 2 on the map">2</span>
+            <span class="timeline__activity">Hotel check-out</span>
+            <span class="timeline__desc">Check out and store bags if we have time to kill before the airport.</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="3" data-lat="-45.0211" data-lon="168.7392" role="button" tabindex="0" aria-label="Show Head to Queenstown Airport (ZQN) on the map">
+          <span class="timeline__time">15:00</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 3 on the map">3</span>
+            <span class="timeline__activity">Head to Queenstown Airport (ZQN)</span>
+            <span class="timeline__desc">Airport transfer with plenty of buffer for the international departure.</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+          </div>
+        </li>
+        <li class="timeline__item timeline__item--clickable" data-stop="4" data-lat="-45.0211" data-lon="168.7392" role="button" tabindex="0" aria-label="Show Depart for home on the map">
+          <span class="timeline__time">17:20</span>
+          <div class="timeline__body">
+            <span class="timeline__node" title="Stop 4 on the map">4</span>
+            <span class="timeline__activity">Depart for home</span>
+            <span class="timeline__desc">Wheels up. Farewell, Aotearoa!</span>
+            
+            <span class="timeline__locate" aria-hidden="true">📍 Show on map</span>
+          </div>
+        </li></ol>
+        </section>
+        
+      </div>
+
+      <aside class="day-side">
+        <section class="panel panel--weather" data-weather-panel data-lat="-45.0312" data-lon="168.6626" data-date="2026-11-20" data-place="Queenstown">
+          <h2 class="section-title">Weather</h2>
+          <div class="weather" data-weather-target>
+            <p class="weather__loading">Fetching forecast…</p>
+          </div>
+        </section>
+
+        
+
+        <section class="panel">
+          <h2 class="section-title">Today's Route</h2>
+          <p class="day-map__route-label">4 stops — numbered in schedule order.</p>
+          <div id="day-map" class="day-map"></div>
+        </section>
+      </aside>
+    </div>
+
+    <nav class="daynav">
+      <a class="daynav__link" href="day-6.html">← Day 6: Queenstown Adventure Day</a>
+      <a class="daynav__link daynav__link--next" href="index.html">Overview →</a>
+    </nav>
+  </main>
+
+  
+  <footer class="footer">
+    <p>New Zealand Adventure · Sat, 14 Nov–Fri, 20 Nov</p>
+    <p class="footer__muted">Weather via <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · Map tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
+  </footer>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/app.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () { window.TripSite && TripSite.init({"type":"day","coords":[-45.0312,168.6626],"place":"Queenstown","date":"2026-11-20","route":{"start":{"name":"Queenstown Town Centre","coords":[-45.0312,168.6626]},"end":{"name":"Queenstown Airport (ZQN)","coords":[-45.0211,168.7392]}},"stops":[{"n":1,"coords":[-45.0334,168.658],"time":"09:00","activity":"Breakfast & pack up","tbc":false},{"n":2,"coords":[-45.033,168.6585],"time":"11:00","activity":"Hotel check-out","tbc":false},{"n":3,"coords":[-45.0211,168.7392],"time":"15:00","activity":"Head to Queenstown Airport (ZQN)","tbc":false},{"n":4,"coords":[-45.0211,168.7392],"time":"17:20","activity":"Depart for home","tbc":false}]}); });</script>
+  </body>
+</html>

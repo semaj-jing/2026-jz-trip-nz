@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NZ 2026</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232b7fc4'/><path d='M4 46 L60 30' stroke='%23ffffff' stroke-width='4' stroke-linecap='round' opacity='0.9'/><circle cx='40' cy='15' r='5' fill='%23e0ff98'/><path d='M38 21 L33 33 L41 40' stroke='%23e0ff98' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M33 33 L45 30' stroke='%23e0ff98' stroke-width='4' stroke-linecap='round'/><path d='M20 44 L52 34' stroke='%23e04a5f' stroke-width='3.5' stroke-linecap='round'/></svg>" />
+  <meta name="description" content="6 days skiing &amp; road-tripping New Zealand&#39;s South Island — Lake Tekapo, Queenstown, Coronet Peak &amp; The Remarkables." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NZ 2026" />
+  <meta property="og:description" content="6 days skiing &amp; road-tripping New Zealand&#39;s South Island — Lake Tekapo, Queenstown, Coronet Peak &amp; The Remarkables." />
+  <meta property="og:url" content="https://semaj-jing.github.io/2026-jz-trip-nz" />
+  <meta property="og:image" content="https://semaj-jing.github.io/2026-jz-trip-nz/assets/snowboard-bg.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NZ 2026" />
+  <meta name="twitter:description" content="6 days skiing &amp; road-tripping New Zealand&#39;s South Island — Lake Tekapo, Queenstown, Coronet Peak &amp; The Remarkables." />
+  <meta name="twitter:image" content="https://semaj-jing.github.io/2026-jz-trip-nz/assets/snowboard-bg.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  
+  <a class="home-btn" href="index.html" aria-label="Home" title="Home">
+    <svg class="home-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 10.5 12 3l9 7.5" />
+      <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
+    </svg>
+  </a>
+
+  <section class="hero">
+    <img class="hero__photo" src="assets/snowboard-bg.jpg" alt="" aria-hidden="true" />
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__dates">
+          <div class="cal-tile" aria-label="Trip start Tuesday 22 September 2026">
+            <span class="cal-tile__weekday">Tue</span>
+            <span class="cal-tile__day">22</span>
+            <span class="cal-tile__month">Sept 2026</span>
+          </div>
+          <span class="hero__dates-arrow" aria-hidden="true">→</span>
+          <div class="cal-tile" aria-label="Trip end Sunday 27 September 2026">
+            <span class="cal-tile__weekday">Sun</span>
+            <span class="cal-tile__day">27</span>
+            <span class="cal-tile__month">Sept 2026</span>
+          </div>
+        </div>
+        <h1 class="hero__title">NZ 2026</h1>
+        
+        <p class="hero__summary">Six days chasing the light across the South Island — from the glacier-blue hush of the Mackenzie Country to the gold-and-tussock passes of Central Otago. We sleep beneath the darkest skies on Earth at Lake Tekapo, then carve four days of fresh snow off Coronet Peak and The Remarkables, with Queenstown and the lake waiting each evening below.</p>
+        <ul class="travelers travelers--hero">
+        <li class="traveler">
+          <img class="traveler__avatar traveler__avatar--img" src="assets/amber-c-dp.png" alt="&amp;" />
+          <span class="traveler__name" title="Zhanqiu C.">&amp;</span>
+        </li>
+        <li class="traveler">
+          <img class="traveler__avatar traveler__avatar--img" src="assets/daniel-s-dp.png" alt="Daneel" />
+          <span class="traveler__name" title="Muqing S.">Daneel</span>
+        </li>
+        <li class="traveler">
+          <img class="traveler__avatar traveler__avatar--img" src="assets/skigif.gif" alt="Jam" />
+          <span class="traveler__name" title="James Z.">Jam</span>
+        </li></ul>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="panel" id="map">
+      <h2 class="section-title">Places We'll Visit</h2>
+      <p class="section-lead">A few highlights along the way — tap a marker to see what it is.</p>
+      <div id="route-map" class="route-map"></div>
+    </section>
+
+    <section class="panel" id="itinerary">
+      <h2 class="section-title">Day-by-Day</h2>
+      <p class="section-lead">A quick summary of each day. Click through for the full breakdown.</p>
+      <ul class="day-list">
+        <li class="day-item">
+          <a class="day-card" href="day-1.html">
+            <div class="day-card__header">
+              <div class="day-card__headings">
+                <span class="day-card__num">Day 1</span>
+                <h3 class="day-card__title">Arrival &amp; Drive to Lake Tekapo</h3>
+                <span class="day-card__date"><span class="tbc-badge tbc-badge--sm" title="This item is not yet confirmed">TBC</span> Tue, 22 Sept</span>
+              </div>
+              <div class="day-card__aside">
+                <div class="day-card__weather" data-weather-badge data-lat="-44.0046" data-lon="170.4779" data-date="2026-09-22">
+                  <span class="weather-badge__loading">Loading weather…</span>
+                </div>
+                <span class="day-card__go">View day →</span>
+              </div>
+            </div>
+            <div class="day-card__body">
+              <p class="day-card__summary">Land in Queenstown, pick up the rental car, and drive north through Central Otago and the Mackenzie Basin to Lake Tekapo, with snack and dinner stops along the way. Arrive around sunset in time for stargazing under some of the darkest skies on Earth.</p>
+              <div class="day-card__landmarks"><span class="day-card__landmark">📍 Queenstown</span><span class="day-card__landmark">📍 Lindis Pass</span><span class="day-card__landmark">📍 Lake Tekapo</span></div>
+            </div>
+          </a>
+        </li>
+        <li class="day-item">
+          <a class="day-card" href="day-2.html">
+            <div class="day-card__header">
+              <div class="day-card__headings">
+                <span class="day-card__num">Day 2</span>
+                <h3 class="day-card__title">Scenic Drive to Queenstown</h3>
+                <span class="day-card__date"><span class="tbc-badge tbc-badge--sm" title="This item is not yet confirmed">TBC</span> Wed, 23 Sept</span>
+              </div>
+              <div class="day-card__aside">
+                <div class="day-card__weather" data-weather-badge data-lat="-45.0333" data-lon="168.7333" data-date="2026-09-23">
+                  <span class="weather-badge__loading">Loading weather…</span>
+                </div>
+                <span class="day-card__go">View day →</span>
+              </div>
+            </div>
+            <div class="day-card__body">
+              <p class="day-card__summary">A full day retracing part of the route back toward Queenstown, with stops at Lake Pukaki, the Clay Cliffs, Cromwell, Lake Wanaka, the Crown Range, and Arrowtown before settling into the Frankton accommodation for the rest of the trip.</p>
+              <div class="day-card__landmarks"><span class="day-card__landmark">📍 Lake Pukaki</span><span class="day-card__landmark">📍 Lake Wānaka</span><span class="day-card__landmark">📍 Arrowtown</span><span class="day-card__landmark">📍 Queenstown</span></div>
+            </div>
+          </a>
+        </li>
+        <li class="day-item">
+          <a class="day-card" href="day-3.html">
+            <div class="day-card__header">
+              <div class="day-card__headings">
+                <span class="day-card__num">Day 3</span>
+                <h3 class="day-card__title">Ski Day — The Remarkables</h3>
+                <span class="day-card__date">Thu, 24 Sept</span>
+              </div>
+              <div class="day-card__aside">
+                <div class="day-card__weather" data-weather-badge data-lat="-45.0333" data-lon="168.7333" data-date="2026-09-24">
+                  <span class="weather-badge__loading">Loading weather…</span>
+                </div>
+                <span class="day-card__go">View day →</span>
+              </div>
+            </div>
+            <div class="day-card__body">
+              <p class="day-card__summary">First relaxed ski day at The Remarkables. Lift tickets valid 9am–4pm, but no need to catch the first or last lift. Pick up rental gear first.</p>
+              <div class="day-card__landmarks"><span class="day-card__landmark">📍 The Remarkables</span><span class="day-card__landmark">📍 Queenstown</span></div>
+            </div>
+          </a>
+        </li>
+        <li class="day-item">
+          <a class="day-card" href="day-4.html">
+            <div class="day-card__header">
+              <div class="day-card__headings">
+                <span class="day-card__num">Day 4</span>
+                <h3 class="day-card__title">Ski Day — Coronet Peak</h3>
+                <span class="day-card__date"><span class="tbc-badge tbc-badge--sm" title="This item is not yet confirmed">TBC</span> Fri, 25 Sept</span>
+              </div>
+              <div class="day-card__aside">
+                <div class="day-card__weather" data-weather-badge data-lat="-45.0333" data-lon="168.7333" data-date="2026-09-25">
+                  <span class="weather-badge__loading">Loading weather…</span>
+                </div>
+                <span class="day-card__go">View day →</span>
+              </div>
+            </div>
+            <div class="day-card__body">
+              <p class="day-card__summary">Second relaxed ski day, this time at Coronet Peak — same lift-ticket structure as Day 3.</p>
+              <div class="day-card__landmarks"><span class="day-card__landmark">📍 Coronet Peak</span><span class="day-card__landmark">📍 Queenstown</span></div>
+            </div>
+          </a>
+        </li>
+        <li class="day-item">
+          <a class="day-card" href="day-5.html">
+            <div class="day-card__header">
+              <div class="day-card__headings">
+                <span class="day-card__num">Day 5</span>
+                <h3 class="day-card__title">Flexible Day — Market, Skiing or Hiking</h3>
+                <span class="day-card__date"><span class="tbc-badge tbc-badge--sm" title="This item is not yet confirmed">TBC</span> Sat, 26 Sept</span>
+              </div>
+              <div class="day-card__aside">
+                <div class="day-card__weather" data-weather-badge data-lat="-45.0333" data-lon="168.7333" data-date="2026-09-26">
+                  <span class="weather-badge__loading">Loading weather…</span>
+                </div>
+                <span class="day-card__go">View day →</span>
+              </div>
+            </div>
+            <div class="day-card__body">
+              <p class="day-card__summary">A deliberately flexible day. The Queenstown Lakefront Market runs every Saturday and falls right on this date. If legs are tired after two days on the mountain, swap a full ski day for a half-day, or skip skiing entirely for a light hike near Frankton/Queenstown instead.</p>
+              <div class="day-card__landmarks"><span class="day-card__landmark">📍 Queenstown</span><span class="day-card__landmark">📍 Coronet Peak</span></div>
+            </div>
+          </a>
+        </li>
+        <li class="day-item">
+          <a class="day-card" href="day-6.html">
+            <div class="day-card__header">
+              <div class="day-card__headings">
+                <span class="day-card__num">Day 6</span>
+                <h3 class="day-card__title">Final Ski Session &amp; Departure</h3>
+                <span class="day-card__date">Sun, 27 Sept</span>
+              </div>
+              <div class="day-card__aside">
+                <div class="day-card__weather" data-weather-badge data-lat="-45.0333" data-lon="168.7333" data-date="2026-09-27">
+                  <span class="weather-badge__loading">Loading weather…</span>
+                </div>
+                <span class="day-card__go">View day →</span>
+              </div>
+            </div>
+            <div class="day-card__body">
+              <p class="day-card__summary">A final, shorter ski session, then an early dinner in Frankton before returning the rental car and catching the evening flight home.</p>
+              <div class="day-card__landmarks"><span class="day-card__landmark">📍 The Remarkables</span><span class="day-card__landmark">📍 Queenstown</span></div>
+            </div>
+          </a>
+        </li></ul>
+    </section>
+
+    <section class="panel" id="flights">
+      <h2 class="section-title">Flights</h2>
+      <div class="flights">
+        <div class="flight-card">
+          <div class="flight-card__type">Outbound</div>
+          <div class="flight-card__route">
+            <div class="flight-card__endpoint">
+              <span class="flight-card__code">Sydney (SYD)</span>
+              <span class="flight-card__time">2026-09-22 08:30</span>
+            </div>
+            <div class="flight-card__plane" aria-hidden="true">✈</div>
+            <div class="flight-card__endpoint flight-card__endpoint--to">
+              <span class="flight-card__code">Queenstown (ZQN)</span>
+              <span class="flight-card__time">2026-09-22 13:30</span>
+            </div>
+          </div>
+          <div class="flight-card__details">
+            <span>Virgin Australia VA0163</span>
+            <span class="flight-card__conf">Conf: —</span>
+          </div>
+        </div>
+        <div class="flight-card">
+          <div class="flight-card__type">Return</div>
+          <div class="flight-card__route">
+            <div class="flight-card__endpoint">
+              <span class="flight-card__code">Queenstown (ZQN)</span>
+              <span class="flight-card__time">2026-09-27 20:50</span>
+            </div>
+            <div class="flight-card__plane" aria-hidden="true">✈</div>
+            <div class="flight-card__endpoint flight-card__endpoint--to">
+              <span class="flight-card__code">Sydney (SYD)</span>
+              <span class="flight-card__time">2026-09-27 21:05</span>
+            </div>
+          </div>
+          <div class="flight-card__details">
+            <span>Jetstar JQ224</span>
+            <span class="flight-card__conf">Conf: —</span>
+          </div>
+        </div></div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <a class="footer__gh" href="https://github.com/semaj-jing/2026-jz-trip-nz" target="_blank" rel="noopener" aria-label="View this project on GitHub">
+      <svg class="footer__gh-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.575.106.785-.25.785-.556 0-.274-.01-1-.015-1.965-3.196.695-3.87-1.54-3.87-1.54-.523-1.33-1.277-1.685-1.277-1.685-1.044-.714.08-.699.08-.699 1.154.081 1.762 1.185 1.762 1.185 1.026 1.758 2.692 1.25 3.348.956.104-.743.401-1.25.73-1.538-2.552-.29-5.235-1.276-5.235-5.68 0-1.255.448-2.28 1.184-3.084-.119-.29-.513-1.46.112-3.043 0 0 .966-.31 3.166 1.178a10.98 10.98 0 0 1 2.882-.388c.978.004 1.963.132 2.882.388 2.199-1.488 3.163-1.178 3.163-1.178.627 1.583.233 2.753.114 3.043.738.804 1.183 1.829 1.183 3.084 0 4.415-2.687 5.386-5.247 5.67.412.355.78 1.056.78 2.13 0 1.538-.014 2.777-.014 3.155 0 .309.207.667.79.554A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/>
+      </svg>
+    </a>
+    <p>NZ 2026 · Tue, 22 Sept–Sun, 27 Sept</p>
+    <p class="footer__muted">Weather via <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · Map tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
+  </footer>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/app.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () { window.TripSite && TripSite.init({"type":"index","mapCenter":[-44.7,169.3],"mapZoom":7}); });</script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+# Node
+node_modules/
+npm-debug.log*
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Note: docs/ is intentionally committed — it's what GitHub Pages serves.
+.ttadk/
+specs/doc_export/

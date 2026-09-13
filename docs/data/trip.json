@@ -1,0 +1,182 @@
+{
+  "trip": {
+    "title": "NZ 2026",
+    "country": "New Zealand",
+    "mapCenter": [
+      -44.7,
+      169.3
+    ],
+    "mapZoom": 7,
+    "startDate": "2026-09-22",
+    "endDate": "2026-09-27"
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-09-22",
+      "title": "Arrival & Drive to Lake Tekapo",
+      "name": "Lake Tekapo",
+      "coords": [
+        -44.0046,
+        170.4779
+      ],
+      "url": "day-1.html"
+    },
+    {
+      "day": 2,
+      "date": "2026-09-23",
+      "title": "Scenic Drive to Queenstown",
+      "name": "Queenstown (Frankton)",
+      "coords": [
+        -45.0333,
+        168.7333
+      ],
+      "url": "day-2.html"
+    },
+    {
+      "day": 3,
+      "date": "2026-09-24",
+      "title": "Ski Day — The Remarkables",
+      "name": "Queenstown (Frankton)",
+      "coords": [
+        -45.0333,
+        168.7333
+      ],
+      "url": "day-3.html"
+    },
+    {
+      "day": 4,
+      "date": "2026-09-25",
+      "title": "Ski Day — Coronet Peak",
+      "name": "Queenstown (Frankton)",
+      "coords": [
+        -45.0333,
+        168.7333
+      ],
+      "url": "day-4.html"
+    },
+    {
+      "day": 5,
+      "date": "2026-09-26",
+      "title": "Flexible Day — Market, Skiing or Hiking",
+      "name": "Queenstown (Frankton)",
+      "coords": [
+        -45.0333,
+        168.7333
+      ],
+      "url": "day-5.html"
+    },
+    {
+      "day": 6,
+      "date": "2026-09-27",
+      "title": "Final Ski Session & Departure",
+      "name": "Queenstown",
+      "coords": [
+        -45.0333,
+        168.7333
+      ],
+      "url": "day-6.html"
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "Lake Tekapo",
+      "coords": [
+        -44.0046,
+        170.4779
+      ],
+      "day": 1,
+      "url": "day-1.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake Tekapo 01.jpg?width=1600",
+      "caption": "Lake Tekapo's milky-turquoise water backed by the Southern Alps."
+    },
+    {
+      "name": "Onsen Hot Pools",
+      "coords": [
+        -44.9987,
+        168.6928
+      ],
+      "day": 3,
+      "url": "day-3.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-OgVOQqoqIO8GFs3Uw1OI4eNufbZFXjOBRyFvl9VZQ&s=10",
+      "caption": "Private cedar hot tubs at Onsen Hot Pools overlooking Shotover Canyon."
+    },
+    {
+      "name": "Cromwell (snack stop)",
+      "coords": [
+        -45.0333,
+        169.2
+      ],
+      "day": 1,
+      "url": "day-1.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Historic Cromwell.jpg?width=1600",
+      "caption": "Old Cromwell Town's restored historic precinct by Lake Dunstan."
+    },
+    {
+      "name": "Lindis Pass summit lookout",
+      "coords": [
+        -44.5878,
+        169.6478
+      ],
+      "day": 1,
+      "url": "day-1.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindis Pass, Otago, New Zealand.jpg?width=1600",
+      "caption": "Golden tussock hills rolling over the Lindis Pass summit."
+    },
+    {
+      "name": "Lake Pukaki lookout",
+      "coords": [
+        -44.2231,
+        170.1281
+      ],
+      "day": 2,
+      "url": "day-2.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake Pukaki & Aoraki Mount Cook 01.jpg?width=1600",
+      "caption": "Lake Pukaki's turquoise water with Aoraki/Mt Cook beyond."
+    },
+    {
+      "name": "Lake Wānaka",
+      "coords": [
+        -44.6983,
+        169.1175
+      ],
+      "day": 2,
+      "url": "day-2.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/That Wanaka Tree, New Zealand.jpg?width=1600",
+      "caption": "\"That Wānaka Tree\" standing alone in Lake Wānaka."
+    },
+    {
+      "name": "Ski/snowboard — The Remarkables",
+      "coords": [
+        -45.0534,
+        168.8139
+      ],
+      "day": 3,
+      "url": "day-3.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The Remarkables from Queenstown, New Zealand 02.jpg?width=1600",
+      "caption": "The Remarkables range rising above Lake Wakatipu."
+    },
+    {
+      "name": "Ski/snowboard — Coronet Peak",
+      "coords": [
+        -44.9269,
+        168.7364
+      ],
+      "day": 4,
+      "url": "day-4.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow Fields Coronet Peak NZ 1.jpg?width=1600",
+      "caption": "Snow fields spread across Coronet Peak."
+    },
+    {
+      "name": "Queenstown Lakefront Market",
+      "coords": [
+        -45.0311,
+        168.66
+      ],
+      "day": 5,
+      "url": "day-5.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Queenstown Bay Lake Wakatipu 01.jpg?width=1600",
+      "caption": "Queenstown Bay lakefront, where the Saturday market is held."
+    }
+  ]
+}
